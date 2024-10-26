@@ -1,20 +1,20 @@
 @font-face{
     font-family: 'Sequel 95';
-    src:url(/fuentes/Sequel\ 100\ Wide\ 95.ttf);
+    src:url(/Funetes/Sequel\ 100\ Wide\ 95.ttf);
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face{
 font-family: 'Sequel 65';
-    src:url(fuentes/Sequel\ 100\ Black\ 65.ttf);
+    src:url(Funetes/Sequel\ 100\ Black\ 65.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
     @font-face{
         font-family: 'Sequel Sans';
-            src:url(fuentes/Sequel\ Sans\ Book.ttf);
+            src:url(Funetes/Sequel\ Sans\ Book.ttf);
             font-weight: normal;
             font-style: normal;
         }
@@ -61,12 +61,23 @@ header {
     height: 80px;
     text-align: center;
     padding-top: 20px;
+    height: 10vh;
 }
 
 nav{
-    text-align: center;
+    text-align: left;
     font-family: 'Sequel 65';
     font-weight: normal;
+    height: 4vh;
+    width: 30vw;
+    min-width: 600px;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+li a {
+    margin-left: 24px;
 }
 
 .article0 {
@@ -112,24 +123,36 @@ p{
     height: auto;
 }
 
-nav li {color: white;
-    background-color: black;
-    display: inline-block;
+nav li {
+    display: inline-flex;
 }
 
-nav a {
+a {
+position: relative;
 text-decoration: none;
 color: white;
-background-color: black;
-padding: 15px;
-display: inline-block;
-border-radius: 10px;
+letter-spacing: 0.5px;
+padding: 0 10px;
 }
 
-nav a:hover {
-    color: black;
+
+
+a:not(.normal):after {
+    content: "";
+    position: absolute;
     background-color: white;
-    }
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    border-radius: 1px;
+  }
+  
+  a:not(.normal):hover:after {
+    width: 100%;
+  }
+
+
 
     html {
         scroll-behavior: smooth;
@@ -158,20 +181,31 @@ nav a:hover {
         margin: 40px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 40px;
+        gap: 70px;
     }
 
     .galeria img {
         height: 100%;
     }
 
-    figure {
+    figure{
         margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         text-align: center;
+    }
+
+    figure a {
+        background-color: black;
+        padding: 15px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    figure a img:hover {
+        box-shadow: 0 0 10px white;
     }
     
     img.centrada {
@@ -185,7 +219,7 @@ nav a:hover {
     figcaption {
         font-family: 'Sequel Sans', sans-serif;
         font-weight: normal;
-        color: #ffffff; /* Asegúrate de que el color contraste con el fondo */
+        color: white;
         margin-top: 10px;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -203,13 +237,29 @@ nav a:hover {
         }
 
         nav {
-            text-align: center;
+            align-items: center;
             font-size: 10px;
+            height: 4vh;
+            width: 30vw;
+            min-width: 380px;
         }
 
         nav a {
-            padding: 4px;
+            padding: 0px;
+            margin-left: -2px;
+            margin-right: 10px;
             }
+
+            a:not(.normal):after {
+                height: 3px;
+                bottom: -8px;
+              }
+
+              figcaption {
+                font-size: small;
+                margin-top: 2px;
+                padding: 1px;
+              }
 
        h3 {
         font-size: 12px;
@@ -220,7 +270,7 @@ nav a:hover {
        }
 
        .galeria {
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
 
        }
 
