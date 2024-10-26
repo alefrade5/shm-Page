@@ -19,13 +19,14 @@ font-family: 'Sequel 65';
             font-style: normal;
         }
 
-body, h1, ul, li {
-  padding: 0;
-  margin: 0;
+section, article, header, footer {
+            margin-bottom: 30px; 
 }
 
 body {
   background-color: black;
+  padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {color: white;
@@ -37,6 +38,8 @@ h3 {color: white;
     background-color: black;
     font-family: 'Sequel 65';
     font-weight: bold;
+    margin-bottom: 30px;
+    
 
 }
 
@@ -65,10 +68,17 @@ nav{
     font-weight: normal;
 }
 
+.article0 {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 80px; 
+}
+
 article{
     background-color: black ;
     padding: 5px;
     margin: 5px;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -108,15 +118,15 @@ nav li {color: white;
 
 nav a {
 text-decoration: none;
-color: black;
-background-color: white;
+color: white;
+background-color: black;
 padding: 15px;
 display: inline-block;
 }
 
 nav a:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     }
 
     html {
