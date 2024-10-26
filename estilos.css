@@ -1,0 +1,175 @@
+@font-face{
+    font-family: 'Sequel 95';
+    src:url(/fuentes/Sequel\ 100\ Wide\ 95.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face{
+font-family: 'Sequel 65';
+    src:url(fuentes/Sequel\ 100\ Black\ 65.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face{
+        font-family: 'Sequel Sans';
+            src:url(fuentes/Sequel\ Sans\ Book.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+body, h1, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {color: white;
+    background-color: black;
+
+}
+
+h3 {color: white;
+    background-color: black;
+    font-family: 'Sequel 65';
+    font-weight: bold;
+
+}
+
+p {color: white;
+
+}
+
+div {
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Sequel 95';
+    font-weight: bold;
+}
+
+nav{
+    text-align: center;
+    font-family: 'Sequel 65';
+    font-weight: normal;
+}
+
+article{
+    background-color: black ;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Sequel 65';
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Sequel Sans';
+    font-weight: normal;
+}
+
+.destaca-rojo {
+    color: red;
+}
+
+.centrada{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.adaptable {
+    width: 100%;
+    height: auto;
+}
+
+nav li {color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+nav a {
+text-decoration: none;
+color: black;
+background-color: white;
+padding: 15px;
+display: inline-block;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+ img {
+    width: 100%;
+    object-fit: cover;
+ }
+
+    .galeria {
+        width: 100%;
+        max-width: cover;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+    }
+
+    .galeria img {
+        height: 100%;
+    }
+
+    @media (max-width: 600px) {
+
+        header {
+            height: 40px;
+            padding-top: 14px;
+            font-size: 8px;
+        }
+
+        nav {
+            text-align: center;
+            font-size: 10px;
+        }
+
+        nav a {
+            padding: 8px;
+            }
+
+       h3 {
+        font-size: 12px;
+       }
+
+       p{
+        font-size: 10px;
+       }
+
+       .galeria {
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+        
+       }
+
+    }
