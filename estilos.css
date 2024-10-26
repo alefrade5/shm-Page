@@ -31,6 +31,9 @@ body {
 
 h1 {color: white;
     background-color: black;
+    font-family: 'Sequel 95';
+    font-weight: bold;
+
 
 }
 
@@ -207,7 +210,7 @@ nav a:hover {
         }
 
         nav a {
-            padding: 8px;
+            padding: 4px;
             }
 
        h3 {
@@ -219,9 +222,14 @@ nav a:hover {
        }
 
        .galeria {
-          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
-        
        }
+
+       footer {
+        padding: 1px;
+        text-align: center;
+        font-weight: normal;
+    }
 
     }
