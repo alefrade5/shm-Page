@@ -133,6 +133,17 @@ nav a:hover {
         scroll-behavior: smooth;
     }
 
+    article a p{
+        text-decoration: none;
+        padding: 1px;
+        display: inline-block;
+    }
+
+    article a p:hover {
+        color: black;
+        background-color: white;
+        }
+
  img {
     width: 100%;
     height: auto;
