@@ -122,6 +122,7 @@ color: white;
 background-color: black;
 padding: 15px;
 display: inline-block;
+border-radius: 10px;
 }
 
 nav a:hover {
