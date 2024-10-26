@@ -65,7 +65,7 @@ header {
 }
 
 nav{
-    text-align: left;
+    text-align: center;
     font-family: 'Sequel 65';
     font-weight: normal;
     height: 4vh;
@@ -74,10 +74,6 @@ nav{
     align-items: center;
     justify-content: space-around;
     margin: auto;
-}
-
-li a {
-    margin-left: 24px;
 }
 
 .article0 {
@@ -237,18 +233,12 @@ a:not(.normal):after {
         }
 
         nav {
-            align-items: center;
             font-size: 10px;
             height: 4vh;
             width: 30vw;
-            min-width: 380px;
+            min-width: 350px;
+            margin-left: -25px;
         }
-
-        nav a {
-            padding: 0px;
-            margin-left: -2px;
-            margin-right: 10px;
-            }
 
             a:not(.normal):after {
                 height: 3px;
