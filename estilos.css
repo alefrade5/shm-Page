@@ -1,20 +1,20 @@
 @font-face{
     font-family: 'Sequel 95';
-    src:url('funetes/Sequel\ 100\ Wide\ 95.ttf');
+    src:url('funetes/Sequel 100 Wide 95.ttf');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face{
 font-family: 'Sequel 65';
-    src:url('funetes/Sequel\ 100\ Black\ 65.ttf');
+    src:url('funetes/Sequel 100 Black 65.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
     @font-face{
         font-family: 'Sequel Sans';
-            src:url('funetes/Sequel\ Sans\ Book.ttf');
+            src:url('funetes/Sequel Sans Book.ttf');
             font-weight: normal;
             font-style: normal;
         }
