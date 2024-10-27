@@ -232,9 +232,9 @@ a:not(.normal):after {
         }
 
         nav a{
-            padding: 26px;
+            padding: 10px;
             font-size: xx-small;
-            position: relative; top: -3px;
+            position: relative; top: -4px;
         }
 
         figcaption {
@@ -247,7 +247,7 @@ a:not(.normal):after {
                 height: 2px;
                 width: 0;
                 left: 0;
-                bottom: 12px;
+                bottom: -6px;
                 border-radius: 1px;
               }
 
