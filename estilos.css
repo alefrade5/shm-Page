@@ -1,20 +1,20 @@
 @font-face{
     font-family: 'Sequel 95';
-    src:url('fuentes/Sequel 100 Wide 95.ttf');
+    src:url('funetes/Sequel\ 100\ Wide\ 95.ttf');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face{
 font-family: 'Sequel 65';
-    src:url('fuentes/Sequel 100 Black 65.ttf');
+    src:url('funetes/Sequel\ 100\ Black\ 65.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
     @font-face{
         font-family: 'Sequel Sans';
-            src:url('fuentes/Sequel Sans Book.ttf');
+            src:url('funetes/Sequel\ Sans\ Book.ttf');
             font-weight: normal;
             font-style: normal;
         }
@@ -33,7 +33,8 @@ h1 {color: white;
     background-color: black;
     font-family: 'Sequel 95';
     font-weight: bold;
-
+    align-items: center;
+    font-size: x-large;
 
 }
 
@@ -57,23 +58,28 @@ div {
 }
 
 header {
+    margin: 6;
     background-color: black;
-    height: 80px;
+    min-height: 80px;
     text-align: center;
     padding-top: 20px;
-    height: 10vh;
+    justify-content: space-around;
 }
 
 nav{
     text-align: center;
     font-family: 'Sequel 65';
     font-weight: normal;
-    height: 4vh;
-    width: 30vw;
-    min-width: 600px;
     align-items: center;
-    justify-content: space-around;
-    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    height: 3vh;
+    background-position: center;
+}
+
+nav a{
+    color: black;
+    padding: 25px;
 }
 
 .article0 {
@@ -119,16 +125,11 @@ p{
     height: auto;
 }
 
-nav li {
-    display: inline-flex;
-}
-
 a {
 position: relative;
 text-decoration: none;
 color: white;
 letter-spacing: 0.5px;
-padding: 0 10px;
 }
 
 
@@ -137,10 +138,10 @@ a:not(.normal):after {
     content: "";
     position: absolute;
     background-color: white;
-    height: 3px;
+    height: 2px;
     width: 0;
     left: 0;
-    bottom: -10px;
+    bottom: 13px;
     border-radius: 1px;
   }
   
@@ -226,29 +227,28 @@ a:not(.normal):after {
 
     @media (max-width: 600px) {
 
-        header {
-            height: 40px;
-            padding-top: 14px;
-            font-size: 8px;
+        h1{
+            font-size: medium;
         }
 
-        nav {
-            font-size: 10px;
-            height: 4vh;
-            width: 30vw;
-            min-width: 350px;
-            margin-left: -25px;
+        nav a{
+            padding: 26px;
+            font-size: xx-small;
+            position: relative; top: -3px;
         }
 
-            a:not(.normal):after {
-                height: 3px;
-                bottom: -8px;
-              }
-
-              figcaption {
+        figcaption {
                 font-size: small;
                 margin-top: 2px;
                 padding: 1px;
+              }
+
+        a:not(.normal):after {
+                height: 2px;
+                width: 0;
+                left: 0;
+                bottom: 12px;
+                border-radius: 1px;
               }
 
        h3 {
@@ -260,7 +260,7 @@ a:not(.normal):after {
        }
 
        .galeria {
-          grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
 
        }
 
